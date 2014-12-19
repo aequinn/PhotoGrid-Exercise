@@ -1,0 +1,5 @@
+<div ng-repeat="photo in photos | filter:searchTerm" class="col-md-3">
+  <strong>{{photo.title}}</strong></br>
+  <img class="img-thumb" ng-src="{{photo.image_teaser_url}}" />
+  <p>{{photo.player.name}}</p>
+</div>
